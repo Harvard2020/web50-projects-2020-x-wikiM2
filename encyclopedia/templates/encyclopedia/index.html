@@ -12,9 +12,11 @@
         {% for entry in entries %}
             <li><a href="{% url 'entry' entry %}">{{ entry }}</a></li>
         {% empty %}
-            <p>Sorry, nothing to show here!</p>
+        <center>
+        <h1> Error 404!</h1>
+            <p>Sorry, nothing is found here!</p>
+            </center>
         {% endfor %}
     </ul>
 
 {% endblock %}
-
